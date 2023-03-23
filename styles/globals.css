@@ -1,11 +1,18 @@
 :root {
 	--black: rgb(59 67 78 / 100%);
+	--gray: #B3C0D9;
+	--gray-light: #EBEBEB;
 	--white: rgb(245 246 248 / 100%);
 	--primary: rgb(118 83 252 / 100%);
-	--red: de0000;
+	--primary-hover:rgb(117, 93, 211);
+	--red: #DE0000;
 	--green: rgb(29 195 126 / 100%);
-	--green-light: c8f8e4;
+	--green-light: #C8F8E4;
+	
 	--font-family: 'Noto Sans', sans-serif;
+	--smp: 14px;
+	--mdp: 16px;
+	--lgp: 18px;
 }
 
 
