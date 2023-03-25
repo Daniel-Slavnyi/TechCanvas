@@ -9,6 +9,7 @@ export function Tab({
   href,
   children,
   className,
+  target,
   ...props
 }: TabProps): JSX.Element {
   return (
@@ -24,7 +25,13 @@ export function Tab({
       })}
       {...props}
     >
-      {href ? <a href={href}>{children}</a> : <>{children}</>}
+      {href ? (
+        <a href={href} target={target}>
+          {children}
+        </a>
+      ) : (
+        <>{children}</>
+      )}
     </div>
   );
 }

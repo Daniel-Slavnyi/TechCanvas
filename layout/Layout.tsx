@@ -3,17 +3,18 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import { LayoutProps } from './Layout.props';
 import SideBar from './SideBar/SideBar';
+import style from './Layout.module.css';
 
 function Layout({ children }: LayoutProps): JSX.Element {
   return (
-    <>
-      <Header />
-      <div>
-        <SideBar />
-        <div>{children}</div>
-      </div>
-      <Footer />
-    </>
+    <div className={style.wrapper}>
+      <Header className={style.header} />
+
+      <SideBar className={style.sidebar} />
+      <div className={style.body}>{children}</div>
+
+      <Footer className={style.footer} />
+    </div>
   );
 }
 

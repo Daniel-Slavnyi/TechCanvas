@@ -4,5 +4,6 @@ export interface TabProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElemen
     size?: 'smt' | 'mdt';
     color?: 'grey' | 'green' | 'red' | 'ghost' | 'primary';
     href?: string;
+    target?: string;
     children: ReactNode;
 }
